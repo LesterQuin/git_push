@@ -1,0 +1,13 @@
+<%= form_for profile do |form| %>
+
+  <div class="field form-group">
+    <%= form.text_field :name, class: "form-control", placeholder: "name", required: "true" %>
+  </div>
+  <div class="field form-group">
+    <%= form.text_field :age, class: "form-control", placeholder: "age", required: "true" %>
+
+
+    <div class="actions">
+    <%= form.submit class: "btn btn-secondary"%>
+    </div><br/>
+<% end %>
